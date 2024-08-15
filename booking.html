@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">ShipEase</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#freight-delivery">Freight Delivery</a>
+                    <a href="#freight-tracking">Freight Tracking</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#login" class="login"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="booking-cont">
+            <h2>Book Vessel</h2>
+            <div class=" bk-crd">
+                <span><p class="title">General Cargo Vessel</p></span>
+                <form>
+                    <div class="cargo-det">
+                        <div class="input-group">
+                            <label for="brd-location"><i class="fa-solid fa-location-dot"></i></label>
+                            <input type="text" id="brd-location" placeholder="Boarding Location" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="destination"><i class="fa-solid fa-map-location-dot"></i></label>
+                            <input type="text" id="destination" placeholder="Destination" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="date">Choose Date:</label>
+                            <input type="date" id="date" min="2024-08-01" max="2024-12-31" required>
+                        </div>
+                    </div>
+        
+                    <div class="cargo-det">
+                        <div class="input-group">
+                            <label for="wht"><i class="fa-solid fa-scale-balanced"></i></label>
+                            <input type="number" id="wht" placeholder="Weight in ton" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="dsp">Description:</label>
+                            <input type="text" id="dsp" placeholder="Cargo description" required>
+                        </div>
+                    </div>
+        
+                    <button class="cta-button submit" type="submit">Book</button>
+                </form>
+            </div>
+        
+            <div class="arv-dsp">
+                <p>Your Cargo Arrives In: <strong>30 Days</strong></p>
+            </div>
+        </section>
+
+        <section class="payment-section">
+            <div class="payment-container">
+                <h2>Payment Details</h2>
+                <form action="/process-payment" method="post" class="pay-form">
+                    <h3>Fee: $50</h3>
+                    <div class="input-group2">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="input-group2">
+                        <label for="cardName">Cardholder's Name</label>
+                        <input type="text" id="cardName" name="cardName" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group2">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="input-group2">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+    
+                    <button type="submit" class="pay-button">Pay Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    
+</body>
+</html>

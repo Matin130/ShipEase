@@ -123,11 +123,15 @@ ul li a:hover {
 }
 
 .cta-button {
-    padding: 10px 20px;
+    padding: 12px;
     background-color: #1e90ff;
     color: #fff;
+    border: none;
     border-radius: 2px;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
@@ -210,6 +214,142 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* Booking Page */
+/* Booking Container */
+.booking-cont {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-cont h2 {
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+.bk-crd {
+    padding: 20px;
+}
+
+.bk-crd .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cargo-det {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+
+/* Arrival Display */
+.arv-dsp {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Payment Section */
+.payment-section {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container {
+    text-align: center;
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1e90ff;
+}
+
+/* Form Styles */
+.pay-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group2 {
+    text-align: left;
+}
+
+.input-group2 label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group2 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group2 input:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+/* Payment Button */
+.pay-button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+    background-color: #0073e6;
 }
 
 /* Animations */
