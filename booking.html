@@ -33,7 +33,7 @@
             <h2>Book Vessel</h2>
             <div class=" bk-crd">
                 <span><p class="title">General Cargo Vessel</p></span>
-                <form>
+                <form id="booking-form">
                     <div class="cargo-det">
                         <div class="input-group">
                             <label for="brd-location"><i class="fa-solid fa-location-dot"></i></label>
@@ -54,7 +54,7 @@
                     <div class="cargo-det">
                         <div class="input-group">
                             <label for="wht"><i class="fa-solid fa-scale-balanced"></i></label>
-                            <input type="number" id="wht" placeholder="Weight in ton" required>
+                            <input type="number" id="wht" placeholder="Weight in ton" min="1" max="15" required>
                         </div>
                         <div class="input-group">
                             <label for="dsp">Description:</label>
@@ -66,8 +66,8 @@
                 </form>
             </div>
         
-            <div class="arv-dsp">
-                <p>Your Cargo Arrives In: <strong>30 Days</strong></p>
+            <div class="wrn-dsp">
+                <p>Cargo weighing above 10 tons incures extra charge</p>
             </div>
         </section>
 
@@ -75,7 +75,7 @@
             <div class="payment-container">
                 <h2>Payment Details</h2>
                 <form action="/process-payment" method="post" class="pay-form">
-                    <h3>Fee: $50</h3>
+                    <h3 id="charge-result">Your Cargo Charge: $0</h3>
                     <div class="input-group2">
                         <label for="cardNumber">Card Number</label>
                         <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
@@ -90,17 +90,24 @@
                     </div>
                     <div class="input-group2">
                         <label for="cvv">CVV</label>
-                        <input type="password" id="cvv" name="cvv" placeholder="123" required>
+                        <input type="password" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
                     </div>
     
                     <button type="submit" class="pay-button">Pay Now</button>
                 </form>
             </div>
         </section>
+
+        <section class="notif-section">
+            <div class="notif-container">
+                <p>Your Cargo Arrives In: <strong>30 Days</strong></p>
+                <i id="cancel" class="fa-solid fa-xmark"></i>
+            </div>
+        </section>
     </main>
 
 
-    <script src="booking.js"></script>
-    <script src="login.js"></script>
+    <script src="script/booking.js"></script>
+    <script src="script/login.js"></script>
 </body>
 </html>
