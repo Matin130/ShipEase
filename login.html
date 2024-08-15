@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>signup</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav>
+        <div class="logo">ShipEase</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="booking.html">Freight Delivery</a>
+                    <a href="#freight-tracking">Freight Tracking</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <div class="auth-buttons">
+            <a href="login.html" class="login">Login</a>
+            <a href="signUp.htmls" class="signup">Sign Up</a>
+        </div> -->
+    </nav>
+
+    <div class="login-container">
+        <div class="signUp">
+            <h2>sign Up/In</h2>
+            <div id="emailInput">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+            </div>
+            <div>
+                <label for="username">username</label>
+                <input type="username" id="companyName" placeholder=" Enter username">
+           </div>
+           <div>
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="At least 8 characters, including numbers and alphabets">
+           </div>
+           <div class="password-requirements">
+            <h3>password Requirements</h3>
+                <ul>
+                    <li>At least 8 character long</li>
+                    <li>Must include a combination of numbers and alphabet</li>
+                </ul>
+           </div>
+            <button onclick="signUp()"> SignUp/In</button>
+            <div id="message"></div>
+        </div>
+    </div>
+
+
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2024 ShipEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script/login.js"></script>
+</body>
+</html>

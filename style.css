@@ -400,3 +400,83 @@ input:focus {
         right: 20px;
     }
 }
+
+/* login */
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+  }
+  
+  .signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signUp h2 {
+    color: blue;
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+  
+  .signUp label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .signUp input[type="email"], .signUp input[type="username"], .signUp input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } 
+  
+  
+  .signUp button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signUp button:hover {
+    background-color: #0056b3;
+  }
+  
+  .password-requirements {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .password-requirements h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .password-requirements ul {
+     padding: 0;
+    margin: 0; 
+    flex-direction: column;
+  } 
+  
+  .password-requirements li {
+    font-size: 14px;
+    margin-bottom: 3px;
+    
+  }
+  
+  #message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  
