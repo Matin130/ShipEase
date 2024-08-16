@@ -402,6 +402,7 @@ input:focus {
 }
 
 /* login */
+
 .login-container {
     width: 400px;
     margin: 50px auto;
@@ -410,73 +411,92 @@ input:focus {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 500px;
+    background-color:whitesmoke;
+    text-align: center;
   }
-  
-  .signUp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .signUp h2 {
+
+  .login-container h2 {
     color: blue;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 5px;
     font-size: 35px;
   }
   
-  .signUp label {
-    font-weight: bold;
-    margin-bottom: 5px;
+  .login-container div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+   
   }
-  
-  .signUp input[type="email"], .signUp input[type="username"], .signUp input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+  .login-container label {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .login-container input {
+    height: 35px;
     border-radius: 5px;
-  } 
-  
-  
-  .signUp button {
+    border: 1px solid #ccc;
+  }
+
+  .password-requirements{
+    text-align: left;
+    
+  }
+  .password-requirements h3 {
+    color: red;
+    margin-top: 3px;
+    font-size: 15px;
+  }
+  .password-requirements ul {
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    padding: 0;
+    margin: 0;
+  }
+  .password-requirements li{
+    padding: 5px;
+    font-size: 13px;
+    margin-bottom:3px ;
+    
+  }
+  .login-container button{
     width: 100%;
     padding: 10px;
+    margin-top: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  .signUp button:hover {
+  .login-container button:hover {
     background-color: #0056b3;
   }
-  
-  .password-requirements {
-    margin-bottom: 20px;
-    align-items: center;
-  }
-  
-  .password-requirements h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .password-requirements ul {
-     padding: 0;
-    margin: 0; 
-    flex-direction: column;
-  } 
-  
-  .password-requirements li {
-    font-size: 14px;
-    margin-bottom: 3px;
-    
-  }
-  
+
   #message {
     color: red;
     margin-top: 10px;
   }
   
+
+  
+ 
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
   

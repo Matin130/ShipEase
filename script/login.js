@@ -14,6 +14,11 @@ function signUp() {
     localStorage.setItem('clientInfo', JSON.stringify(clientInfo));
     document.getElementById('message').textContent = 'Sign Up successful';
     window.location.href = "booking.html";
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('userName').textContent = localStorage.getItem('loggedInUser');
+      });
+    
 }
  
 function requiredPassword(password) {
@@ -26,23 +31,22 @@ function requiredPassword(password) {
 function login() {
     let companyName = document.getElementById('companyName').value; 
     let password = document.getElementById('password').value; 
-    letstoredClientInfo = JSON.parse(localStorage.getItem('clientInfo'));
+    let storedClientInfo = JSON.parse(localStorage.getItem('clientInfo'));
+
+    
+    if (!storedClientInfo) {
+        document.getElementById('message').textContent = "No registered users found.";
+        return;
+    }
+
     let user = Object.values(storedClientInfo).find(user => user.companyName === companyName);
 
     if (user && user.password === password) {
         localStorage.setItem('loggedInUser', companyName);
         document.getElementById('message').textContent = 'Login successful';
-        document.getElementById('emailInput').style.display = 'none';
         window.location.href = "booking.html";
     } else {
         document.getElementById('message').textContent = "Invalid company name or password";
     }
 }
-
-    document.querySelector('.login').addEventListener('click', function () { 
-        window.location.href = "login.html";   
-    });
-
-     
-
 
