@@ -355,7 +355,7 @@ input:focus {
 }
 
 /* Notification */
-.notif-section {
+#notif-section {
     display: none;
 }
 
@@ -364,7 +364,7 @@ input:focus {
     /* top: 0;
     right: 0; */
     right: 20px;
-    top: 80px;
+    top: 60px;
     display: flex;
     justify-content: space-between;
     background-color: #f9f9f9;
