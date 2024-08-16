@@ -17,8 +17,8 @@
             <li class="dropdown">
                 <a href="#services">Services</a>
                 <div class="dropdown-content">
-                    <a href="#freight-delivery">Freight Delivery</a>
-                    <a href="#freight-tracking">Freight Tracking</a>
+                    <a href="">Freight Delivery</a>
+                    <a href="#">Freight Tracking</a>
                 </div>
             </li>
             <li><a href="#contact">Contact</a></li>
@@ -48,7 +48,7 @@
         
                         <div class="input-group">
                             <label for="date">Choose Date:</label>
-                            <input type="date" id="date" min="2024-08-01" max="2024-12-31" required>
+                            <input type="date" id="date" required>
                         </div>
                     </div>
         
@@ -75,7 +75,7 @@
         <section class="payment-section">
             <div class="payment-container">
                 <h2>Payment Details</h2>
-                <form action="/process-payment" method="post" class="pay-form">
+                <form id="pay-form" class="pay-form">
                     <h3 id="charge-result">Your Cargo Charge: $0</h3>
                     <div class="input-group2">
                         <label for="cardNumber">Card Number</label>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="input-group2">
                         <label for="expiryDate">Expiry Date</label>
-                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                        <input type="month" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
                     </div>
                     <div class="input-group2">
                         <label for="cvv">CVV</label>
@@ -99,9 +99,9 @@
             </div>
         </section>
 
-        <section class="notif-section">
+        <section id="notif-section">
             <div class="notif-container">
-                <p>Your Cargo Arrives In: <strong>30 Days</strong></p>
+                <p>Your Cargo Arrives In: <strong>15 Days</strong></p>
                 <i id="cancel" class="fa-solid fa-xmark"></i>
             </div>
         </section>
